@@ -1,4 +1,4 @@
-# TCP File Server — Network Programming Task 3
+# TCP File Server Network Programming Task 3
 
 > Pemrograman Jaringan (Network Programming) · ITS Surabaya · 2025
 
@@ -12,7 +12,7 @@ A multithreaded TCP file server built from scratch in Python, supporting file li
 
 ## Overview
 
-This project implements a TCP file server that allows clients to list and download files over raw TCP sockets using a custom text-based protocol. The server uses a **thread-per-client** model — each incoming connection is handled in its own thread. Responses are returned as JSON and terminated with `\r\n\r\n`.
+This project implements a TCP file server that allows clients to list and download files over raw TCP sockets using a custom text-based protocol. The server uses a **thread-per-client** model each incoming connection is handled in its own thread. Responses are returned as JSON and terminated with `\r\n\r\n`.
 
 A CLI client (`file_client_cli.py`) is provided for interactive use from the terminal.
 
@@ -106,25 +106,12 @@ GET hello.txt
 
 ## Key Concepts Covered
 
-- **TCP socket programming** — raw `socket.AF_INET` / `SOCK_STREAM`, bind, listen, accept
-- **Thread-per-client concurrency** — `threading.Thread` spawned for each incoming connection
-- **Custom protocol design** — text commands with JSON responses, `\r\n\r\n` message terminator
-- **Base64 file encoding** — safe binary-over-text transfer using `base64.b64encode`
-- **Layered architecture** — clean separation of server logic, protocol parsing, and file operations
-- **CLI client** — interactive terminal interface for real-time server interaction
-
----
-
-## Relation to Other Tasks
-
-This task builds the foundation for more advanced implementations in the same course:
-
-| Task | Feature Added |
-|---|---|
-| **Task 2** | TCP time server — basic client-server with custom protocol |
-| **Task 3 (this)** | File server — LIST & GET, thread-per-client, Base64 transfer |
-| **Task 4** | HTTP server — 7 concurrency models, SSL/TLS, socket proxy |
-| **Midterm** | Full file server — UPLOAD & DELETE added, thread pool vs process pool, stress test |
+- **TCP socket programming** : raw `socket.AF_INET` / `SOCK_STREAM`, bind, listen, accept
+- **Thread-per-client concurrency** : `threading.Thread` spawned for each incoming connection
+- **Custom protocol design** : text commands with JSON responses, `\r\n\r\n` message terminator
+- **Base64 file encoding** : safe binary-over-text transfer using `base64.b64encode`
+- **Layered architecture** : clean separation of server logic, protocol parsing, and file operations
+- **CLI client** : interactive terminal interface for real-time server interaction
 
 ---
 
@@ -139,6 +126,6 @@ This is **Task 3** of the *Pemrograman Jaringan* (Network Programming) course at
 **Agnes Priscilla Sekartaji Hadikusuma**  
 S1 Teknik Informatika · Institut Teknologi Sepuluh Nopember (ITS) Surabaya
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/agnespriscilla)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/agnespriscilla33)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/agnespriscilla)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:agnes.priscilla33@gmail.com)
